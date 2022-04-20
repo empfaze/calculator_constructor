@@ -87,7 +87,7 @@ const StyledBackground = styled.div`
 `
 
 const StyledNumber = styled.span`
-  font-size: 2.4rem;
-  line-height: 2.6rem;
+  font-size: 2.6rem;
+  line-height: 3rem;
   font-weight: 800;
 `

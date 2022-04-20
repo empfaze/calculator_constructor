@@ -40,11 +40,7 @@ export const OperationButton: FC<ButtonProps> = ({ value, status }) => {
 
   const tabIndex = status === BlockStatus.ACTIVE ? 0 : -1;
 
-  return (
-    <StyledButton status={status} tabIndex={tabIndex} onMouseDown={mouseDownHandler} onKeyDown={keyDownHandler}>
-      {value}
-    </StyledButton>
-  );
+  return <StyledButton status={status} tabIndex={tabIndex} onMouseDown={mouseDownHandler} onKeyDown={keyDownHandler}>{value}</StyledButton>;
 };
 
 const StyledButton = styled.button<StyledButtonProps>`
@@ -65,6 +61,8 @@ const StyledButton = styled.button<StyledButtonProps>`
   line-height: 1.5rem;
   font-weight: 500;
   color: #000000;
+
+  pointer-events: ${({status}) => status === BlockStatus.ACTIVE ? "auto" : "none"};
 
   &:not(:last-of-type) {
     margin-right: 4px;

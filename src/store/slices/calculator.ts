@@ -97,10 +97,7 @@ const calcSlice = createSlice({
       }
     },
 
-    changeOrderOfElements: (
-      state,
-      action: PayloadAction<{ bottomElement: IBlock; topElement: IBlock }>
-    ) => {
+    changeOrderOfElements: (state, action: PayloadAction<{ bottomElement: IBlock; topElement: IBlock }>) => {
       switch (action.payload.topElement.destination) {
         case BlockDestination.INITIAL_COLUMN:
           const bottomElementIdx = state.resultColumn.findIndex((elem) => elem.id === action.payload.bottomElement.id);

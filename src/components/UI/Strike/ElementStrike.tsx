@@ -68,5 +68,4 @@ const StyledElementStrike = styled.div<StyledStrikeProps>`
 const ActiveStrike = css`
   visibility: visible;
   opacity: 1;
-  pointer-events: all;
 `

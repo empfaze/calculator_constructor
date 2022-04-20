@@ -19,12 +19,10 @@ export const ModeButton: FC<ModeButtonProps> = ({ type }) => {
 
   function clickHandler(): void {
     if (type === modeContext?.mode) return;
-
     modeContext?.setMode(type);
   }
   function keyDownHandler(e: KeyboardEvent<HTMLDivElement>): void {
     if (e.key !== "Enter" || type === modeContext?.mode) return;
-
     modeContext?.setMode(type);
   }
 

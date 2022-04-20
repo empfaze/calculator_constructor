@@ -31,9 +31,7 @@ export const EqualButton: FC<ButtonProps> = ({ equalButton }) => {
 
   const tabIndex = equalButton.status === BlockStatus.ACTIVE ? 0 : -1;
 
-  return (
-    <StyledButton tabIndex={tabIndex} onMouseDown={mouseDownHandler} onKeyDown={keyDownHandler} equalButton={equalButton}>=</StyledButton>
-  )
+  return <StyledButton tabIndex={tabIndex} onMouseDown={mouseDownHandler} onKeyDown={keyDownHandler} equalButton={equalButton}>=</StyledButton>
 }
 
 const StyledButton = styled.button<StyledEqualButtonProps>`
@@ -43,6 +41,8 @@ const StyledButton = styled.button<StyledEqualButtonProps>`
 
   height: 100%;
   width: 100%;
+  
+  pointer-events: ${({equalButton}) => equalButton.status === BlockStatus.ACTIVE ? "auto" : "none"};
 
   font-family: inherit;
   border-radius: 6px;

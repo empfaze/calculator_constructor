@@ -1,16 +1,13 @@
 import ReactDOM from "react-dom";
 import { App } from "./components/App";
 import { Provider } from "react-redux";
-import GlobalStyles from "global"
+import "./index.css";
 import store from "./store";
-import {FocusVisible} from "./components/UI/FocusVisible";
+import "focus-visible";
 
 ReactDOM.render(
   <Provider store={store}>
-    <GlobalStyles />
-    <FocusVisible>
-      <App />
-    </FocusVisible>
+    <App />
   </Provider>,
   document.getElementById("root")
 );

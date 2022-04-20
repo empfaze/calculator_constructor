@@ -63,5 +63,4 @@ const StyledDropAreaStrike = styled.div<StyledDropAreaProps>`
 const ActiveStrike = css`
   visibility: visible;
   opacity: 1;
-  pointer-events: all;
 `
