@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/calculator_constructor/static/js/main.4d381451.js",
+    "static/media/sprite.svg": "/calculator_constructor/static/media/sprite.bf8366d48f559e9991e5fc89fcb55091.svg",
+    "index.html": "/calculator_constructor/index.html",
+    "main.4d381451.js.map": "/calculator_constructor/static/js/main.4d381451.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.4d381451.js"
+  ]
+}
